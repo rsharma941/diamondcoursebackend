@@ -4,7 +4,7 @@ import cloudinary from "cloudinary";
 import RazorPay from "razorpay";
 import nodeCron from "node-cron";
 import { Stats } from "./models/Stats.js";
-connectDB();
+await connectDB();
 
 cloudinary.v2.config({
   cloud_name: process.env.CLOUDINARY_CLIENT_NAME,
