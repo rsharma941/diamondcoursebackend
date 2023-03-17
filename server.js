@@ -10,9 +10,9 @@ import express from 'express'
 await connectDB();
 
 cloudinary.v2.config({
-  cloud_name: process.env.CLOUDINARY_CLIENT_NAME,
-  api_key: process.env.CLOUDINARY_CLIENT_API,
-  api_secret: process.env.CLOUDINARY_CLIENT_SECRET,
+  cloud_name: 'dtucla9es',
+  api_key: '767132571424227',
+  api_secret: 'oC1WUeeEC9-QH9VcUaOUImROZPg',
   secure: true,
 });
   
