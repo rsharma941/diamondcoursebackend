@@ -4,6 +4,7 @@ import cloudinary from "cloudinary";
 import RazorPay from "razorpay";
 import nodeCron from "node-cron";
 import { Stats } from "./models/Stats.js";
+require('dotenv').config();
 await connectDB();
 
 cloudinary.v2.config({
