@@ -10,7 +10,6 @@ import {
 import {
   authorizeAdmin,
   isAuthenticated,
-  authorizeSubscribers,
 } from "../middlewares/auth.js";
 import singleUpload from "../middlewares/multer.js";
 
@@ -27,7 +26,7 @@ router
 // Add lecture, Delete Course, Get Course Details
 router
   .route("/course/:id")
-  .get(isAuthenticated, authorizeSubscribers, getCourseLectures)
+  .get(isAuthenticated,  getCourseLectures)
   .post(isAuthenticated, authorizeAdmin, singleUpload, addLecture)
   .delete(isAuthenticated, authorizeAdmin, deleteCourse);
 
